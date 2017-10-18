@@ -1,0 +1,54 @@
+[08-Sep-2017 16:55:23 Asia/Kolkata] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/palle2patnam/public_html/manage_webmaster/site_settings.php on line 67
+[08-Sep-2017 16:55:26 Asia/Kolkata] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/palle2patnam/public_html/manage_webmaster/site_settings.php on line 67
+[08-Sep-2017 17:08:37 Asia/Kolkata] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/palle2patnam/public_html/manage_webmaster/milk_vendors.php on line 35
+[08-Sep-2017 17:20:51 Asia/Kolkata] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/palle2patnam/public_html/manage_webmaster/customer_enqueries.php on line 21
+[08-Sep-2017 18:01:33 Asia/Kolkata] PHP Fatal error:  Call to undefined function getIndividualDetails() in /home/palle2patnam/public_html/manage_webmaster/edit_products.php on line 96
+[08-Sep-2017 18:28:03 Asia/Kolkata] PHP Warning:  chown(): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 18:28:03 Asia/Kolkata] PHP Warning:  unlink(../uploads/logo/logo.png): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 92
+[08-Sep-2017 18:28:03 Asia/Kolkata] PHP Warning:  move_uploaded_file(../uploads/logo/mobile-01.png): failed to open stream: No such file or directory in /home/palle2patnam/public_html/manage_webmaster/site_settings.php on line 32
+[08-Sep-2017 18:28:03 Asia/Kolkata] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpNsIG37' to '../uploads/logo/mobile-01.png' in /home/palle2patnam/public_html/manage_webmaster/site_settings.php on line 32
+[08-Sep-2017 18:30:48 Asia/Kolkata] PHP Warning:  chown(): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 18:30:48 Asia/Kolkata] PHP Warning:  unlink(../uploads/logo/logo.png): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 92
+[08-Sep-2017 18:30:48 Asia/Kolkata] PHP Warning:  move_uploaded_file(../uploads/logo/mobile-01.png): failed to open stream: No such file or directory in /home/palle2patnam/public_html/manage_webmaster/site_settings.php on line 32
+[08-Sep-2017 18:30:48 Asia/Kolkata] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpIAblFT' to '../uploads/logo/mobile-01.png' in /home/palle2patnam/public_html/manage_webmaster/site_settings.php on line 32
+[08-Sep-2017 18:31:54 Asia/Kolkata] PHP Warning:  chown(): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 18:31:54 Asia/Kolkata] PHP Warning:  unlink(../uploads/logo/logo.png): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 92
+[08-Sep-2017 18:48:32 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 18:52:42 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 18:53:55 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 18:56:18 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 19:16:43 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 19:27:11 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 19:27:21 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 19:27:29 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 19:30:25 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 20:29:50 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 20:36:52 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 20:41:18 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 20:42:27 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 22:47:40 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 22:48:48 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 22:49:35 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 22:50:24 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 22:52:35 Asia/Kolkata] PHP Warning:  chown(): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 22:52:35 Asia/Kolkata] PHP Warning:  unlink(../uploads/product_images/carrot.png): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 92
+[08-Sep-2017 22:53:20 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[08-Sep-2017 22:54:01 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 13:43:19 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 13:48:13 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 13:48:27 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 14:03:58 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 14:04:41 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 14:06:03 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 14:06:12 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 14:06:20 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 14:07:21 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 14:27:33 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 14:31:48 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 14:32:57 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 16:14:16 Asia/Kolkata] PHP Warning:  chown(): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 16:14:16 Asia/Kolkata] PHP Warning:  unlink(../uploads/product_images/banner_W_lifestyle_stuff.jpg): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 92
+[11-Sep-2017 16:14:37 Asia/Kolkata] PHP Warning:  chown(): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[11-Sep-2017 16:14:37 Asia/Kolkata] PHP Warning:  unlink(../uploads/product_images/3CatBrowse_ElectronicsL1_streaming82843-170220_1487626839014.jpg): No such file or directory in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 92
+[12-Sep-2017 11:17:31 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91
+[12-Sep-2017 11:17:39 Asia/Kolkata] PHP Warning:  chown(): Operation not permitted in /home/palle2patnam/public_html/manage_webmaster/admin_includes/common_functions.php on line 91

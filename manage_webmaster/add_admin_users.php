@@ -3,7 +3,7 @@
   error_reporting(0);
   if (!isset($_POST['submit']))  {
     //If fail
-    echo "fail";
+    echo " ";
   } else  { 
       // //If success
       $admin_name = $_POST['admin_name'];

@@ -40,18 +40,6 @@
           </div>
           <div class="panel-body">
             <div class="table-responsive">
-              <?php $sql1 = "SELECT orders.order_status, order_status.id,order_status.status FROM orders LEFT JOIN order_status ON orders.order_status=order_status.id GROUP BY orders.order_status";
-            $result1 = $conn->query($sql1);
-          ?>
-          <div class="form-group col-md-4">                    
-            <select id="select-order" class="custom-select">
-               <option value="">Choose status</option>
-                <?php while ($getAllStatus = $result1->fetch_assoc()) { ?>
-                  <option value="<?php echo $getAllStatus['status']; ?>"><?php echo $getAllStatus['status']; ?></option>
-                <?php } ?>
-            </select>
-          </div>
-          <div class="clear_fix"></div>
               <table class="table table-striped table-bordered dataTable" id="table-1">
                 <thead>
                   <tr>
@@ -61,6 +49,7 @@
                     <th>Mobile No</th>
                     <th>created Date</th>
                     <th>Order Status</th>
+                    <th>Payment Status</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -73,7 +62,8 @@
                     <td><?php echo $res1['mobile'];?></td>
                     <td><?php echo $res1['order_date'];?></td>                 
                     <td><?php if ($res1['order_status']==1) { echo "Pending" ;} elseif($res1['order_status']==2) { echo "Completed" ;} else{ echo "Cancelled";}?></td>
-                    <td><a href="edit_orders.php?oid=<?php echo $res1['id'];?>"><i class="zmdi zmdi-edit"></i></a> &nbsp;<a href="#" class="click_view" data-modalId="<?php echo $res1['id']?>"><i class="zmdi zmdi-eye zmdi-hc-fw" data-toggle="modal" data-target="#successModal2" class=""></i></a></td>
+                    <td><?php if ($res1['payment_status']==1) { echo "Pending" ;} else{ echo "Completed";}?></td>
+                    <td><a href="edit_orders.php?oid=<?php echo $res1['id'];?>"><i class="zmdi zmdi-edit"></i></a> &nbsp;<a href="#" class="click_view" data-modalId="<?php echo $res1['id']?>"><i class="zmdi zmdi-eye zmdi-hc-fw" data-toggle="modal" data-target="#successModal2" class=""></i></a></a> &nbsp;<a href="TCPDF/examples/view_order_pdf.php?uid=<?php echo $res1['id'];?>" target="_blank"><i class="zmdi zmdi-local-printshop"></i></a></td>
                      <!-- Open Modal Box  here -->
                     <div id="myModal_<?php echo $res1['id']; ?>" class="modal fade" >
                           <div class="modal-dialog" Style="margin-top:10%;">
@@ -134,13 +124,13 @@
                                             <div class="table1-cell"></div>
                                             <div class="table1-cell"></div>
                                         </div>
-                                        <div class="table1-row table1-footer">
+                                        <!-- <div class="table1-row table1-footer">
                                             <div class="table1-cell">Sub Total</div>
                                             <div class="table1-cell"></div>
                                             <div class="table1-cell"><?php echo $res1['cart_sub_total']; ?></div>
                                             <div class="table1-cell"></div>
-                                        </div>  
-                                        <div class="table1-row table1-footer">
+                                        </div> -->  
+                                        <!-- <div class="table1-row table1-footer">
                                             <div class="table1-cell">Delivery Charges</div>
                                             <div class="table1-cell"></div>
                                             <div class="table1-cell"><?php echo $res1['delivery_charges']; ?></div>
@@ -151,11 +141,12 @@
                                             <div class="table1-cell"></div>
                                             <div class="table1-cell"><?php echo $res1['packaging_charges']; ?></div>
                                             <div class="table1-cell"></div>
-                                        </div>
+                                        </div> -->
                                         <div class="table1-row table1-footer">
-                                            <div class="table1-cell">Order Total</div>
+                                            <div class="table1-cell" style="text-align:right">Order Total</div>
                                             <div class="table1-cell"></div>
-                                            <div class="table1-cell"><?php echo $res1['order_total']; ?></div>
+                                             <div class="table1-cell"></div>
+                                            <div class="table1-cell" style="text-align:center"><?php echo $res1['order_total']; ?></div>
                                             <div class="table1-cell"></div>
                                         </div>
                                       </div>

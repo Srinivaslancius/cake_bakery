@@ -29,7 +29,7 @@
             }   
         }
 ?>
-		<div class="site-content">
+    <div class="site-content">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="m-y-0">Banners</h3>
@@ -43,15 +43,15 @@
                     <input type="text" class="form-control" id="form-control-2" name="title" placeholder="Title" data-error="Please enter title." required>
                     <div class="help-block with-errors"></div>
                   </div>
-				          <div class="form-group">
+                  <div class="form-group">
                     <label for="form-control-4" class="control-label">Banner</label>
                     <img id="output" height="100" width="100"/>
                     <label class="btn btn-default file-upload-btn">
-						          Choose file...
+                      Choose file...
                         <input id="form-control-22" class="file-upload-input" type="file" accept="image/*" name="fileToUpload" id="fileToUpload"  onchange="loadFile(event)"  multiple="multiple" required >
                       </label>
                   </div>
-				          <?php $getStatus = getDataFromTables('user_status',$status=NULL,$clause=NULL,$id=NULL,$activeStatus=NULL,$activeTop=NULL);?>
+                  <?php $getStatus = getDataFromTables('user_status',$status=NULL,$clause=NULL,$id=NULL,$activeStatus=NULL,$activeTop=NULL);?>
                   <div class="form-group">
                     <label for="form-control-3" class="control-label">Choose your status</label>
                     <select id="form-control-3" name="status" class="custom-select" data-error="This field is required." required>

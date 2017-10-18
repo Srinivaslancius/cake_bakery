@@ -18,7 +18,7 @@
             </div>
           </div>
           </a>
-          <a href="admin_users.php">
+          <a href="admin_users.php" style="color: white;text-decoration: none !important;">
           <div class="col-md-4 col-sm-5">
             <div class="widget widget-tile-2 bg-warning m-b-30">
               <div class="wt-content p-a-20 p-b-50">

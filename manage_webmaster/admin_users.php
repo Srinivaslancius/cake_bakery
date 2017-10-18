@@ -14,7 +14,7 @@
                     <th>S.No</th>
                     <th>Admin Name</th>
                     <th>Admin Email</th>
-                    <th>created_at</th>
+                    <th>Created Date</th>
                     <th>Status</th>
                     <th>Actions</th>
                   </tr>
