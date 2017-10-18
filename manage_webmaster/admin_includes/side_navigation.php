@@ -53,7 +53,7 @@
                 <span class="menu-text">Content Pages</span>
               </a>
             </li>
-            <li  class="<?php if($page_name == 'categories.php' || $page_name == 'add_categories.php' || $page_name == 'edit_categories.php') { echo "active"; } ?>">
+            <!-- <li  class="<?php if($page_name == 'categories.php' || $page_name == 'add_categories.php' || $page_name == 'edit_categories.php') { echo "active"; } ?>">
               <a href="categories.php" aria-haspopup="true">
                 <span class="menu-icon">
                    <i class="zmdi zmdi-store zmdi-hc-fw"></i>
@@ -84,7 +84,7 @@
                 </span>
                 <span class="menu-text">Sub Sub Categories</span>
               </a>
-            </li>
+            </li> -->
             <li  class="<?php if($page_name == 'products.php' || $page_name == 'add_products.php' || $page_name == 'edit_products.php') { echo "active"; } ?>">
               <a href="products.php" aria-haspopup="true">
                 <span class="menu-icon">
@@ -110,7 +110,7 @@
               </a>
             </li> -->
             </li>
-            <li  class="<?php if($page_name == 'services.php' || $page_name == 'add_services.php' || $page_name == 'edit_services.php' || $page_name == 'delete_services.php') { echo "active"; } ?>">
+            <!-- <li  class="<?php if($page_name == 'services.php' || $page_name == 'add_services.php' || $page_name == 'edit_services.php' || $page_name == 'delete_services.php') { echo "active"; } ?>">
               <a href="services.php" aria-haspopup="true">
                 <span class="menu-icon">
                    <i class="zmdi zmdi-account-box-mail zmdi-hc-fw"></i>
@@ -125,7 +125,7 @@
                 </span>
                 <span class="menu-text">Partner Logos</span>
               </a>
-            </li>
+            </li> -->
 
             <li  class="<?php if($page_name == 'customer_enqueries.php') { echo "active"; } ?>">
               <a href="customer_enqueries.php" aria-haspopup="true">
