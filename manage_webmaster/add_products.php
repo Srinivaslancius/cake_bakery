@@ -6,14 +6,13 @@ if (!isset($_POST['submit']))  {
 } else  {
     //Save data into database
     $product_name = $_POST['product_name'];
-    $category_id = $_POST['category_id'];
     $product_info = $_POST['product_info'];
     $status = $_POST['status'];
     $created_at = date("Y-m-d h:i:s");
     $created_by = $_SESSION['admin_user_id'];
     //save product images into product_images table    
     
-     $sql1 = "INSERT INTO products (`product_name`,`category_id`, `product_info`,`status`,`created_by`,`created_at`) VALUES ('$product_name','$category_id', '$product_info', '$status','$created_by','$created_at')";
+     $sql1 = "INSERT INTO products (`product_name`, `product_info`,`status`,`created_by`,`created_at`) VALUES ('$product_name', '$product_info', '$status','$created_by','$created_at')";
      $result1 = $conn->query($sql1);
      $last_id = $conn->insert_id;
 
@@ -51,22 +50,10 @@ if (!isset($_POST['submit']))  {
           </div>
           <div class="panel-body">
             <div class="row">
-              <?php $getCategories = getDataFromTables('categories','0',$clause=NULL,$id=NULL,$activeStatus=NULL,$activeTop=NULL);?>
+              
               <?php $getWeights = getDataFromTables('product_weights','0',$clause=NULL,$id=NULL,$activeStatus=NULL,$activeTop=NULL);?>
               <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <form data-toggle="validator" method="post" enctype="multipart/form-data">
-
-                  <div class="form-group">
-                    <label for="form-control-3" class="control-label">Choose your Category</label>
-                    <select id="form-control-3" name="category_id" class="custom-select" data-error="This field is required." required>
-                      <option value="">Select Category</option>
-                      <?php while($row = $getCategories->fetch_assoc()) {  ?>
-                        <option value="<?php echo $row['id']; ?>"><?php echo $row['category_name']; ?></option>
-                      <?php } ?>
-                   </select>
-                    <div class="help-block with-errors"></div>
-                  </div>
-
                   <div class="form-group">
                     <label for="form-control-2" class="control-label">Product Name</label>
                     <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Product Name" data-error="Please enter product name." required>
@@ -105,7 +92,7 @@ if (!isset($_POST['submit']))  {
                     Choose file...
                           <input id="product_images" class="file-upload-input" type="file" accept="image/*" name="product_images[]" id="product_images" multiple="multiple" required >
                       </label>
-                      <a style="cursor:pointer" id="add_more" class="add_field_button">Add More Fields</a>
+                      <!-- <a style="cursor:pointer" id="add_more" class="add_field_button">Add More Fields</a> -->
                   </div>
 
                   <?php $getStatus = getDataFromTables('user_status',$status=NULL,$clause=NULL,$id=NULL,$activeStatus=NULL,$activeTop=NULL);?>

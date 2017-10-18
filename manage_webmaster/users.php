@@ -4,7 +4,7 @@
       <div class="site-content">
         <div class="panel panel-default panel-table">
           <div class="panel-heading">
-            <a href="add_users.php" style="float:right">Add User</a>
+            <!-- <a href="add_users.php" style="float:right">Add User</a> -->
             <h3 class="m-t-0 m-b-5">Users</h3>
           </div>
           <div class="panel-body">

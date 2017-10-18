@@ -7,11 +7,10 @@ if (!isset($_POST['submit']))  {
     
     //Save data into database
     $product_name = $_POST['product_name'];
-    $category_id = $_POST['category_id'];
     $product_info = $_POST['product_info'];
     $status = $_POST['status'];
     //save product images into product_images table    
-    $sql1 = "UPDATE products SET product_name = '$product_name',category_id ='$category_id', product_info = '$product_info', status = '$status' WHERE id = '$id'"; 
+    $sql1 = "UPDATE products SET product_name = '$product_name', product_info = '$product_info', status = '$status' WHERE id = '$id'"; 
     
     if ($conn->query($sql1) === TRUE) {
     echo "Record updated successfully";
@@ -63,22 +62,10 @@ if (!isset($_POST['submit']))  {
             <div class="row">
               <?php $getProductsData = getDataFromTables('products','0','id',$id,$activeStatus=NULL,$activeTop=NULL);
                 $getProducts = $getProductsData->fetch_assoc();
-                $getCategories = getDataFromTables('categories','0',$clause=NULL,$id=NULL,$activeStatus=NULL,$activeTop=NULL);
                 ?>
                 
               <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <form data-toggle="validator" method="post" enctype="multipart/form-data">
-
-                  <div class="form-group">
-                    <label for="form-control-3" class="control-label">Choose your Category</label>
-                    <select id="form-control-3" name="category_id" class="custom-select" data-error="This field is required." required>
-                      <option value="">Select Category</option>
-                      <?php while($row = $getCategories->fetch_assoc()) {  ?>
-                        <option value="<?php echo $row['id']; ?>" <?php if($row['id'] == $getProducts['category_id']) { echo "selected=selected"; }?> ><?php echo $row['category_name']; ?></option>
-                    <?php } ?>
-                   </select>
-                    <div class="help-block with-errors"></div>
-                  </div>
                   <div class="form-group">
                     <label for="form-control-2" class="control-label">Product Name</label>
                     <input type="text" class="form-control" id="form-control-2" name="product_name" data-error="Please enter product name." required value="<?php echo $getProducts['product_name']; ?>">
@@ -138,7 +125,7 @@ if (!isset($_POST['submit']))  {
                         <input type="file" name="product_images[]" accept="image/*" required >
                       </label>
                       <?php } ?>
-                      <a style="cursor:pointer" id="add_more" class="add_field_button">Add More Fields</a>
+                     <!--  <a style="cursor:pointer" id="add_more" class="add_field_button">Add More Fields</a> -->
                     </div>
                   </div>
 

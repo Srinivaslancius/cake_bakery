@@ -12,14 +12,14 @@
           <?php $sql = "SELECT products.category_id, categories.category_name FROM products LEFT JOIN categories ON products.category_id=categories.id GROUP BY products.category_id";
             $result = $conn->query($sql);
           ?>
-          <div class="form-group col-md-4">            
+          <!-- <div class="form-group col-md-4">            
             <select id="select-category" class="custom-select">
               <option value="">Select Category</option>
               <?php while($getAllCategories = $result->fetch_assoc()) {  ?>
                 <option value="<?php echo $getAllCategories['category_name']; ?>"><?php echo $getAllCategories['category_name']; ?></option>
               <?php } ?>
             </select>           
-          </div>
+          </div> -->
           <div class="clear_fix"></div>
           <!-- <div class="form-group col-md-4">
               <div class="custom-controls-stacked checkbox_new_div">
@@ -42,7 +42,6 @@
                   <tr>
                     <th>S.No</th>
                     <th>Product Name</th>
-                    <th>Category Name</th>
                     <th>Status</th>
                     <th>Actions</th>
                   </tr>
@@ -52,8 +51,7 @@
                   <tr>
                     <td><?php echo $i;?></td>
                     <td><?php echo $row['product_name'];?></td>
-                    <td><?php $getCategories = getDataFromTables('categories',$status=NULL,'id',$row['category_id'],$activeStatus=NULL,$activeTop=NULL);
-              $getCategory = $getCategories->fetch_assoc(); echo $getCategory['category_name']; ?></td>
+                    
                     <td><?php if ($row['status']==0) { echo "<span class='label label-outline-success check_active open_cursor' data-incId=".$row['id']." data-status=".$row['status']." data-tbname='products
                     '>Active</span>" ;} else { echo "<span class='label label-outline-info check_active open_cursor' data-status=".$row['status']." data-incId=".$row['id']." data-tbname='products'>In Active</span>" ;} ?></td>
                     <td> <a href="edit_products.php?pid=<?php echo $row['id']; ?>"><i class="zmdi zmdi-edit"></i></a> &nbsp; <a href="#"><i class="zmdi zmdi-eye zmdi-hc-fw" data-toggle="modal" data-target="#<?php echo $row['id']; ?>" class=""></i></a></td>
