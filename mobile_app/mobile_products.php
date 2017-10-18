@@ -1,5 +1,5 @@
 <?php 
-
+error_reporting(0);
 require_once('../manage_webmaster/admin_includes/config.php');
 require_once('../manage_webmaster/admin_includes/common_functions.php');
 //Set Array for list
