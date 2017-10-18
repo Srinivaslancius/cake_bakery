@@ -85,6 +85,14 @@
                 <span class="menu-text">Sub Sub Categories</span>
               </a>
             </li> -->
+             <li  class="<?php if($page_name == 'weight.php' || $page_name == 'add_weight.php' || $page_name == 'edit_weight.php') { echo "active"; } ?>">
+              <a href="weight.php" aria-haspopup="true">
+                <span class="menu-icon">
+                   <i class="zmdi zmdi-store zmdi-hc-fw"></i>
+                </span>
+                <span class="menu-text">Weights</span>
+              </a>
+            </li>
             <li  class="<?php if($page_name == 'products.php' || $page_name == 'add_products.php' || $page_name == 'edit_products.php') { echo "active"; } ?>">
               <a href="products.php" aria-haspopup="true">
                 <span class="menu-icon">
