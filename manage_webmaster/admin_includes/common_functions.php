@@ -33,6 +33,16 @@
         return $result;
     }
 
+    /*Common function with where clause */
+    function getAllDataWhere($table,$clause,$id)
+    {
+        global $conn;
+        $sql="select * from `$table` WHERE `$clause` = '$id' ";
+        $result = $conn->query($sql);        
+        return $result;
+    }
+
+
     /* Common function for get count for rows */
      function getRowsCount($table)  {
         global $conn;
