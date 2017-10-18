@@ -73,12 +73,7 @@
                             <div class="col-sm-4">Name: </div>
                             <div class="col-sm-6"><?php echo $row['product_name'];?></div>
                           </div>  
-                          <div class="row">
-                            <div class="col-sm-2"></div>
-                            <div class="col-sm-4">Category Name: </div>
-                            <div class="col-sm-6"><?php $getCategories = getDataFromTables('categories',$status=NULL,'id',$row['category_id'],$activeStatus=NULL,$activeTop=NULL);
-              $getCategory = $getCategories->fetch_assoc(); echo $getCategory['category_name']; ?> </div>
-                          </div>                                                
+                                                                         
                           <div class="row">
                             <div class="col-sm-2"></div>
                             <div class="col-sm-4">Product Info: </div>
