@@ -22,7 +22,7 @@ class MobileCommonClass {
 
     function checkIpExists($user_mobile) {
         global $conn;
-        $getSel ="SELECT mobile_imei_address FROM users WHERE user_mobile = '$user_mobile' ";
+        $getSel ="SELECT user_mobile FROM users WHERE user_mobile = '$user_mobile' ";
         $res = $conn->query($getSel);
         return $res->num_rows;
     }

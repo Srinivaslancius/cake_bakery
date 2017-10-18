@@ -22,7 +22,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                     $response["success"] = 0;
                     $response["message"] = "You have successfully registered and logged in";
                     //Send email for user after registraion
-                    $bodyMessage = 'Dear '.$_REQUEST['name'].', <br />Thank you for signing up at Open Library. <br />Thanks & Regards,
+                    $bodyMessage = 'Dear '.$_REQUEST['name'].', <br />Thank you for signing up at Cake Bakery. <br />Thanks & Regards,
 Open Library Team';
                     $subject='User Registration';
                     $toEmail ='srinivas@lanciussolutions.com';
