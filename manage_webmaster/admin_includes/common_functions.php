@@ -28,7 +28,7 @@
     /*Common function with where out where get all data from query */
     function getAllDataWithActiveRecent($table)  {
         global $conn;
-        $sql="select * from `$table` ORDER BY status, id DESC ";
+        $sql="select * from `$table` WHERE status = 0 ORDER BY status, id DESC ";
         $result = $conn->query($sql); 
         return $result;
     }
@@ -42,6 +42,14 @@
         return $result;
     }
 
+     function getIndividualDetails($id,$table,$clause)
+    {
+        global $conn;
+        $sql="select * from `$table` where `$clause` = '$id' ";
+        $result = $conn->query($sql);
+        $row = $result->fetch_assoc();        
+        return $row;
+    }
 
     /* Common function for get count for rows */
      function getRowsCount($table)  {
